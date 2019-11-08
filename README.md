@@ -1,4 +1,4 @@
-# Common OI Algorithm Template by TNTCompany WYL
+# OI Algorithm Template by TNTCompany WYL
 
 ## This is a list of Algorithm Template for OI.
 
