@@ -2,7 +2,7 @@
 
 This is a list of Algorithm Template for OI.
 
-Link:
+Luogu paste link:
 
 Dijkstra with Priority Queue: https://www.luogu.org/paste/tbs4n77x
 
