@@ -4,7 +4,7 @@
 
 You could download '.cpp' source file here.
 
-Or, you could get them through these Luogu paste link:
+Or, you could get them through these Luogu Paste link:
 
 Dijkstra with Priority Queue: https://www.luogu.org/paste/tbs4n77x
 
