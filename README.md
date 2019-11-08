@@ -2,7 +2,9 @@
 
 ## This is a list of Algorithm Template for OI.
 
-Luogu paste link:
+You could download '.cpp' source file here.
+
+Or, you could get them through these Luogu paste link:
 
 Dijkstra with Priority Queue: https://www.luogu.org/paste/tbs4n77x
 
