@@ -2,7 +2,7 @@
 
 ## This is a list of Algorithm Templates for OI.
 
-You could directly download '.cpp' source file here.
+You could directly download '.cpp' source files here.
 
 Or, you could get them through these Luogu Paste link:
 
