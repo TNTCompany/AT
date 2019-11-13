@@ -14,4 +14,6 @@ Shortest Path Fast Algorithm (SPFA): https://www.luogu.org/paste/wmrznnep
 
 Fast Read Function for 'double' type (including common header files): https://www.luogu.org/paste/ziatpz94
 
+Fast 'gets()' Function for 'char[]' type: https://www.luogu.org/paste/65ywyb7d
+
 Keeps updating...
