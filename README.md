@@ -1,6 +1,6 @@
-# OI Algorithm Template by TNTCompany WYL
+# OI Algorithm Templates by TNTCompany WYL
 
-## This is a list of Algorithm Template for OI.
+## This is a list of Algorithm Templates for OI.
 
 You could directly download '.cpp' source file here.
 
