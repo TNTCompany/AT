@@ -7,14 +7,14 @@
 using namespace std;
 inline int read();
 
-struct Edge//Ç°ÏòĞÇ´æ±ß
+struct Edge//å‰å‘æ˜Ÿå­˜è¾¹
 {
-	int to;//´Ë±ßµÄ×Ó½Úµã
-	int w;//´Ë±ßµÄÈ¨Öµ
-	int from;//ÓëËü×î½üµÄ¸¸½ÚµãÒ»ÑùµÄ±ßµÄ±àºÅ
+	int to;//æ­¤è¾¹çš„å­èŠ‚ç‚¹
+	int w;//æ­¤è¾¹çš„æƒå€¼
+	int from;//ä¸å®ƒæœ€è¿‘çš„çˆ¶èŠ‚ç‚¹ä¸€æ ·çš„è¾¹çš„ç¼–å·
 }e[1000001];
-int head[200001];//ÒÔÄ³µãÎª¸¸½ÚµãÒı³öµÄ×îºóÒ»Ìõ±ß
-/*unsigned*/ int cnt=0;//±ß±àºÅ
+int head[200001];//ä»¥æŸç‚¹ä¸ºçˆ¶èŠ‚ç‚¹å¼•å‡ºçš„æœ€åä¸€æ¡è¾¹
+/*unsigned*/ int cnt=0;//è¾¹ç¼–å·
 
 
 bool vis[200001];
@@ -27,7 +27,7 @@ inline void add(int u, int v, int w)//add Edge
 	e[cnt].w=w;
 	
 	e[cnt].from=head[u];
-	head[u]=cnt;//¸üĞÂhead
+	head[u]=cnt;//æ›´æ–°head
 }
 
 void dijkstra(int);
@@ -55,23 +55,23 @@ int main()
 void dijkstra(int s)
 {
 	memset(dis, 0x3f, sizeof(dis));
-	//vis[] ÊÇ·ñ×÷Îª¹ıÆğµã
-	memset(vis, 0, sizeof(vis));	//¾àÀë
+	//vis[] æ˜¯å¦ä½œä¸ºè¿‡èµ·ç‚¹
+	memset(vis, 0, sizeof(vis));	//è·ç¦»
 	int x=s;
 	dis[s]=0;
 	//long long minn;
-	while(!vis[x])//¼´ËÑÍêÕûÕÅÍ¼
+	while(!vis[x])//å³æœå®Œæ•´å¼ å›¾
 	{
-		vis[x]=1;//ÒÑ×öÎª¹ıÆğµã
-		for(int i=head[x]; i; i=e[i].from)//Á´Ê½Ç°ÏòĞÇËÑ±ß
+		vis[x]=1;//å·²åšä¸ºè¿‡èµ·ç‚¹
+		for(int i=head[x]; i; i=e[i].from)//é“¾å¼å‰å‘æ˜Ÿæœè¾¹
 		{
 			if(!vis[e[i].to]&&dis[e[i].to]>dis[x]+e[i].w)
-			dis[e[i].to]=dis[x]+e[i].w;//¸üĞÂ²Ù×÷
+			dis[e[i].to]=dis[x]+e[i].w;//æ›´æ–°æ“ä½œ
 		}
 		long long mn=0x7f7f7f7f;
 		for(int i=1; i<=n; i++)
 		{
-			if(!vis[i] && mn>dis[i])//È¡ĞÂµÄ×îĞ¡Öµ
+			if(!vis[i] && mn>dis[i])//å–æ–°çš„æœ€å°å€¼
 			{
 				mn=dis[i];
 				x=i;
